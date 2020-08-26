@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe name="syllabub"><title>Syllabub Recipe</title>
+<!--ebb: This is an XML comment. Notice how I coded it, and how it looks in oXygen.
+        You can toggle a comment by highlighting your text in oXygen and right-clicking on your computer: look for "Toggle Comment". Or just type out the special code you need. 
+        NOTE: You may not use two hyphens together in a comment, because that disturbs XML representation of a comment tag set. (That's just like how we can't simply type ampersands or angle brackets without escaping them in an XML document with &amp;, &lt; and &gt; ) 
+        
+        I just partially coded this in class on Wed. 26 August 2020. 
+    -->
+<about>About this recipe
+Healthiness : (71 votes) 
+View a modern version of this recipe</about>
+
+<para>The Georgians loved rich, sweet food.  Sugar had become much more easily available (mostly because of the Transatlantic Slave Trade) and was fast replacing honey as the main food sweetener.</para>
+
+<para>This version of the syllabub recipe was by Eliza Acton, who lived in 18th century. There are plenty of earlier versions but they are more likely to curdle as they contain cider. This version was very modern and fashionable in its day and is easy to manage:
+
+<blockQuote>"Take a quart of cream, a pint of sack, juice of a lemon, whip it, as the froth flies take it off with a spoon and lay it in glasses: but first you must sweeten and stir some white wine into your glasses, and gently lay on your froth. Set them by and do not make them long before you use them."</blockQuote></para>
+
+<para3>Sugar and sherry (known as sack) were still expensive ingredients and dishes like this would have been eaten in the houses of the richer merchants who would be able to afford sugar, lemons, new salad vegetables and sack.</para3>
+
+<para>We have addded a non-alcoholic lemon syllabub for you to try too.</para>
+
+<pics>For images of the cooking process see our Syllabub Pictures.</pics>
+
+<credits>With thanks to <name who="IP">Ian Pycroft</name> of Black Knight Historical and to The Georgian House, Bristol.
+</credits>
+<list type="ingredients">
+   <label>Ingredients</label>
+<item type="fruit">1 lemon</item>
+<item type="liquid" quant=".25" unit="pint">1/4 pint sack (pale or dark)</item>
+<item type="sweetener" range="2 3" unit="oz">2-3 oz caster sugar</item>
+<item>1/2 pint double cream</item>
+<item>4-6 tablespoons sweet/dessert white wine</item>
+</list>
+
+<list type="equipment"><label>Equipment</label>
+<item>Knife</item>
+<item>Grater</item>
+<item>Chopping board</item>
+<item>Mixing bowl</item>
+<item>Jug</item>
+<item>Tablespoon</item></list>
+
+<process>Making and cooking it
+Always wash your hands before preparing food
+
+Grate half the peel, pare off the rest in fine strips
+Place sherry, grated peel, lemon juice and sugar in bowl and soak for 2 hours
+Whip the cream until semi-stiff
+Add sherry gradually
+Spoon a little wine into glass and spoon on whipped cream
+Decorate the top with lemon peel sticks
+Serve with Shrewsberry cakes</process>
+Whipt Syllabub  - print view  Whipt Syllabub - print view
+
+If you tried this recipe and liked it, tell us about it
+</recipe>
