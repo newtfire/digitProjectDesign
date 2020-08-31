@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe name="syllabub"><title>Syllabub Recipe</title>
+
+<about>About this recipe
+Healthiness : (71 votes) 
+View a modern version of this recipe</about>
+
+<para>The Georgians loved rich, sweet food.  Sugar had become much more easily available (mostly because of the Transatlantic Slave Trade) and was fast replacing honey as the main food sweetener.</para>
+
+<para>This version of the syllabub recipe was by Eliza Acton, who lived in 18th century. There are plenty of earlier versions but they are more likely to curdle as they contain cider. This version was very modern and fashionable in its day and is easy to manage:
+
+<blockQuote>"Take a quart of cream, a pint of sack, juice of a lemon, whip it, as the froth flies take it off with a spoon and lay it in glasses: but first you must sweeten and stir some white wine into your glasses, and gently lay on your froth. Set them by and do not make them long before you use them."</blockQuote></para>
+
+<para>Sugar and sherry (known as sack) were still expensive ingredients and dishes like this would have been eaten in the houses of the richer merchants who would be able to afford sugar, lemons, new salad vegetables and sack.</para>
+
+<para>We have addded a non-alcoholic lemon syllabub for you to try too.</para>
+
+<pics>For images of the cooking process see our Syllabub Pictures.</pics>
+
+<credits>With thanks to <name who="IP">Ian Pycroft</name> of Black Knight Historical and to The Georgian House, Bristol.</credits>
+
+<list type="ingredients">
+<label>Ingredients</label>
+<item type="fruit" xml:id="lemon">1 lemon</item>
+<item type="liquid" quant=".25" unit="pint" xml:id="sack">1/4 pint sack (pale or dark)</item>
+<item type="sweetner" range="2 3" unit="oz" xml:id="cstrSugar">2-3 oz caster sugar</item>
+<item xml:id="cream">1/2 pint double cream</item>
+<item xml:id="whtWine">4-6 tablespoons sweet/dessert white wine</item>
+</list>
+
+<list type="equipment">
+<label>Equipment</label>
+<item xml:id="knife">Knife</item>
+<item xml:id="grater">Grater</item>
+<item xml:id="chpgBoard">Chopping board</item>
+<item xml:id="mxgBowl">Mixing bowl</item>
+<item xml:id="jug">Jug</item>
+<item xml:id="tbsp">Tablespoon</item>
+</list>
+
+<process>
+<label>Making and cooking it</label>
+<reminder>Always wash your hands before preparing food</reminder>
+
+<step><equip xml:id="#grater">Grate</equip> half the <ingred xml:id="#lemon">peel</ingred>, pare off the rest in fine strips</step>
+<step>Place sherry, grated <ingred xml:id="#lemon">peel</ingred>, <ingred xml:id="lemon">lemon</ingred> juice and <ingred xml:id="#cstrSugar">sugar</ingred> in <equip xml:id="#mxgBowl">bowl</equip> and soak for 2 hours</step>
+<step>Whip the <ingred xml:id="cream">cream</ingred> until semi-stiff</step>
+<step>Add sherry gradually</step>
+<step>Spoon a little wine into glass and spoon on whipped <ingred xml:id="cream">cream</ingred></step>
+<step>Decorate the top with <ingred xml:id="lemon">lemon peel</ingred> sticks</step>
+<step>Serve with Shrewsberry cakes</step>
+</process>
+</recipe>
