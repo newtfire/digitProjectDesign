@@ -1,7 +1,7 @@
 # digitProjectDesign-Hub
 shared repo for Digital Project Design class
 
-Welcome to the digitProjectDesign-Hub! This is a repository to help introduce and orient DIGIT students to the GitHub collaboration environment, and accompanies the course website posted at <https://newtfire.org/courses/digitProjectDesign/dpdSyll.html>
+Welcome to the digitProjectDesign-Hub! This is a repository to help introduce and orient DIGIT students to the GitHub collaboration environment, and accompanies the course website posted at <https://newtfire.org/courses/digitProjectDesign/>
 
 In order for you to participate fully in this shared class space, I need to add you as a collaborator. [Set up your own GitHub account](https://github.com) and write to me to tell me how to find you.
 
