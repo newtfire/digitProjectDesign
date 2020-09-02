@@ -7,7 +7,7 @@ In order for you to participate fully in this shared class space, I need to add 
 
 Now that you're here, you should try to "clone" this repository on your local computer.
 
-Here is a quick and handy list of git commands: <GitCommands.md>
+Here is a quick and handy list of git commands: <https://github.com/newtfire/digitProjectDesign-Hub/blob/master/GitCommands.md>
 You can read our detailed guide to get started with Git (or just use this as we do, like a reference to search in for information): <https://newtfire.org/courses/tutorials/explainGitShell.html>
 
 When you have set up an account and have installed the git tools (Mac/Linux) or Git Bash shell (Windows) locally on your computer, you are ready to experiment with git commands. Always be sure to sync your local folder to receive any changes pushed to this GitHub repository. At command line, that means, issue a **"git pull"** (or a "git fetch" and "git merge") command to retrieve changes to the directories from the cloud *before* you begin working. Always sync your local directory with our cloud directory here on the web when you begin work, and when you conclude work at a local computer.
