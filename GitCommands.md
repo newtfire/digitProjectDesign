@@ -41,7 +41,7 @@ cd directoryName
 ````
 This moves down into a directory. 
 
-* To make sure you're in the right directory, the top level of the DHClass-Hub, also check to see the directory name at the terminal prompt. Yours should look similar to this, and the key part is "digitProjectDesign-Hub":
+* To make sure you're in the right directory, the top level of the digitProjectDesign-Hub, also check to see the directory name at the terminal prompt. Yours should look similar to this, and the key part is "digitProjectDesign-Hub":
 `eeb4@salamander digitProjectDesign-Hub % `
 
 Then to pull in any changes from the remote "mothership" repo, type:
