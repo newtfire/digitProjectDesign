@@ -51,7 +51,7 @@ git pull
 
 3) When you want to share you local changes to the repo with the remote mothership and other collaborators, you need to **add**, **commit**, and **push** those changes. Here's how you do it:
 
-* Make sure you're in the digitProjectDesign repo at the top level
+* Make sure you're in the digitProjectDesign-Hub repo at the top level
 * Then type:
 ````
 git add .
