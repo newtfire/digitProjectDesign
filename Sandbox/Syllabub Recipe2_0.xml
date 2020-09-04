@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe names="syllabub"><Title>Syllabub Recipe</Title>
+    
+<p>The <hist>Georgians</hist> loved rich, sweet food.  Sugar had become much more easily available (mostly because of the Transatlantic Slave Trade) and was fast replacing honey as the main food sweetener.</p>
+
+<p>This version of the syllabub recipe was by <name who="EA">Eliza Acton</name>, who lived in 18th century. There are plenty of earlier versions but they are more likely to curdle as they contain cider. This version was very modern and fashionable in its day and is easy to manage:
+
+<Quote>"Take a quart of cream, a pint of sack, juice of a lemon, whip it, as the froth flies take it off with a spoon and lay it in glasses: but first you must sweeten and stir some white wine into your glasses, and gently lay on your froth. Set them by and do not make them long before you use them."</Quote></p>
+
+<p>Sugar and sherry (known as sack) were still expensive ingredients and dishes like this would have been eaten in the houses of the richer merchants who would be able to afford sugar, lemons, new salad vegetables and sack.</p>
+
+<credits>With thanks to <name who="IP">Ian Pycroft</name> of <hist>Black Knight Historical</hist> and to The Georgian House, Bristol.</credits>
+
+<list type="Ingredients">
+    <label>Ingredients</label>
+<item type="Fruit" quant="1" xml:id="lemon"> 1 lemon</item>
+<item type="Liquid" quant=".25" unit="pint" xml:id="pintSack">1/4 pintsack (pale or dark)</item>
+<item type="sweetener" range="2 3" unit="oz" xml:id="casterSugar">2-3 oz caster sugar</item>
+<item type="Liquid" quant=".5" xml:id="dblCream">1/2 pint double cream</item>
+<item type="Liquid" range="4 6" xml:id="whtWine">4-6 <equip ptr="tbsp">tablespoons</equip> sweet/dessert white wine</item>
+</list>
+
+<List type="Equipment"><Label>Equipment</Label>
+<item xml:id="knife">Knife</item>
+<item xml:id="grater">Grater</item>
+<item xml:id="chopBoard">Chopping board</item>
+<item xml:id="mxBowl">Mixing bowl</item>
+<item xml:id="jug">Jug</item>
+<item xml:id="tbsp">Tablespoon</item></List>
+
+<Process>Making and cooking it
+<warning>Always wash your hands before preparing food</warning>
+
+<orderedlist>
+<item number="1"><equip ptr="#grater">Grate</equip> half the peel, pare off the rest in fine strips</item>
+<item number="2">Place sherry, grated peel, lemon juice and sugar in <equip ptr="#msBowl">bowl</equip> and soak for 2 hours</item>
+<item number="3">Whip the <ingred ptr="dblCream">cream</ingred> until semi-stiff</item>
+<item number="4">Add sherry gradually</item>
+<item number="5">Spoon a little <ingred ptr="#whtWine">wine</ingred> into glass and spoon on whipped cream</item>
+<item number="6">Decorate the top with <ingred ptr="#lemon">lemon</ingred> peel sticks</item>
+<item number="7">Serve with Shrewsberry cakes</item>
+</orderedlist>
+</Process>
+</recipe>
