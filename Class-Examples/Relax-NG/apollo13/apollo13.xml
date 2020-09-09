@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="apollo13_ebb.rnc" type="application/relax-ng-compact-syntax"?>
+<!--ebb: This schema is working properly to validate my XML code, and it is marking out things that break its validation rules.
+        Can you figure out why it is throwing errors on the lines below?
+        Hint: Mostly it is because of the formatting of some text that is supposed to be a datatype.
+-->
 <apollo13>
         <doc source="nasa" type="techtranscript"/>
         <head>
