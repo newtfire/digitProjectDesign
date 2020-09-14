@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?xml-model href="xmlid-example.rnc" type="application/relax-ng-compact-syntax"?>
-<recipe>
+
+<!--I'm leaving this as I recoded it in class today. The schema is firing errors 
+because. . .the value of the @ref attribute does NOT conform to the xsd:IDREF datatype that I wanted
+to show you in class.
+To fix them, make the value of @ref conform to the xsd:IDREF.
+xsd:IDREF has to be exactly the same as an xsd:ID datatype anywhere else in the document
+You can use an xsd:IDREF as many times as you want, and it just has to POINT to an xsd:ID defined somewhere in the document.
+--><recipe>
         
     <title>Shrewsberry (Shrewsbury) Cakes Recipe</title>
     
@@ -14,7 +21,7 @@
     
     <p type="history"><bg xml:id="shrsbryCake">Shrewsberry/Shrewsbury cakes are a kind of biscuit</bg>. They are less crumbly than a shortbread but have a buttery flavour. Sweet foods like biscuits were popular with the Georgians and were easier to make because of the the increased <bg xml:id="bgSugar">importing of sugar from the sugar plantations in the Caribbean</bg>. They were made to accompany many dishes but were popular with syllabub, which is a <bg xml:id="bgSyllabub">sugared, whipped cream, flavoured with cider or sherry</bg>. Sugar was an <bg xml:id="bgSugarTrade">important trade item and refined (white) sugar was very fashionable</bg>.</p>
     
-    <p>This recipe uses <bgRef ref="#bgSugarTrade">white sugar</bgRef>, which would have been pinched off a sugarloaf and then ground (beaten) until fine enough to use in the recipe.</p>
+    <p>This recipe uses <bgRef ref="casSugar">white sugar</bgRef>, which would have been pinched off a sugarloaf and then ground (beaten) until fine enough to use in the recipe.</p>
     
     <p>Traditionally they are baked as thick, large biscuits and were able to be kept for long periods of time.</p>
     
@@ -28,14 +35,14 @@
     
     <recList type="ingreds">
         <subtitle>Ingredients</subtitle>
-        <item xml:id="whFlour" qual="dry" quant="4" unit="oz">4 oz plain white flour</item>
-        <item xml:id="casSugar" qual="dry" quant="4" unit="oz">4 oz white, <bgRef ref="#bgSugar">caster sugar</bgRef></item>
+        <item xml:id="wSugar" qual="dry" quant="4" unit="oz">4 oz plain white flour</item>
+        <item xml:id="casSugar" qual="dry" quant="4" unit="oz">4 oz white, <bgRef ref="bgSugar">caster sugar</bgRef></item>
         <item xml:id="sButter" qual="wet" quant="4" unit="oz">4 oz salted butter (very soft, works best)</item>
         <item xml:id="nutmeg" qual="dry" quant=".25" unit="#tsp">1/4 teaspoon of grated (or ground) nutmeg</item>
         <item xml:id="rsWater" qual="wet" range="2 3" unit="#tsp">2-3 teaspoon rosewater</item>
         <item xml:id="tWater" qual="wet" range="3 5" unit="#tbsp">3-5 tablespoons tapwater (at room temperature)</item>
-        <item qual="dry" req="optional">optional: a little <ingred ref="#casSugar">caster sugar</ingred> to sprinkle on the top</item>
-        <note>( Note: You may need more <ingred ref="#tWater">water</ingred> to make a stiff dough, it will depend on the flour you use.)</note>
+        <item qual="dry" req="optional">optional: a little <ingred ref="casSugar">caster sugar</ingred> to sprinkle on the top</item>
+        <note>( Note: You may need more <ingred ref="tWater">water</ingred> to make a stiff dough, it will depend on the flour you use.)</note>
     </recList>
     
     <recList type="equip">
@@ -57,15 +64,15 @@
         <subtitle>Making and cooking it</subtitle>
         <note>Always wash your hands before preparing food.</note>
         <item xml:id="step1" num="1">Heat the oven with a good fire</item>
-        <item xml:id="step2" num="2">Put the <ingred ref="#whFlour">flour</ingred>, <ingred ref="#casSugar">sugar</ingred> and <ingred ref="#sButter">butter</ingred> into a <equip ref="#mixBowl">bowl</equip> and <equip ref="#wSpoon">mix</equip> well with a <equip ref="#fork">fork</equip>. You should end up with fine breadcrumbs. If the <ingred ref="#sButter">butter</ingred> is hard, you will need to rub it in with your fingertips, like making pastry</item>
-        <item xml:id="step3" num="3">Add the <ingred ref="rsWater">rosewater</ingred> and enough <ingred ref="#tWater">water</ingred> to make a soft dough</item>
-        <item xml:id="step4" num="4">Gather the <step ref="#step3">dough</step> together with your fingers in the <equip ref="#mixBowl">bowl</equip></item>
+        <item xml:id="step2" num="2">Put the <ingred ref="whFlour">flour</ingred>, <ingred ref="#casSugar">sugar</ingred> and <ingred ref="#sButter">butter</ingred> into a <equip ref="#mixBowl">bowl</equip> and <equip ref="#wSpoon">mix</equip> well with a <equip ref="#fork">fork</equip>. You should end up with fine breadcrumbs. If the <ingred ref="#sButter">butter</ingred> is hard, you will need to rub it in with your fingertips, like making pastry</item>
+        <item xml:id="step3" num="3">Add the <ingred ref="rsWater">rosewater</ingred> and enough <ingred ref="tWater">water</ingred> to make a soft dough</item>
+        <item xml:id="step4" num="4">Gather the <step ref="step3">dough</step> together with your fingers in the <equip ref="mixBowl">bowl</equip></item>
         <item xml:id="step5" num="5">Kneed lightly</item>
-        <item xml:id="step6" num="6"><ingred ref="#whFlour">Flour</ingred> a surface and <equip ref="#rollPin">roll</equip> the dough out to 3 shillings depth</item>
+        <item xml:id="step6" num="6"><ingred ref="whFlour">Flour</ingred> a surface and <equip ref="#rollPin">roll</equip> the dough out to 3 shillings depth</item>
         <item xml:id="step7" num="7">Use a glass to cut the cakes out</item>
-        <item xml:id="step8" num="8">Prick the surface of the cakes with a <equip ref="#fork">fork</equip></item>
-        <item xml:id="step9" num="9">Space the cakes out on <equip ref="#bakeSheet">paper</equip> and <step ref="#step1">bake</step> until the cakes are golden brown</item>
-        <item xml:id="step10" num="10">Serve <equip ref="#coolRack">cold</equip> with <bgRef ref="#bgSyllabub">syllabub</bgRef></item>
+        <item xml:id="step8" num="8">Prick the surface of the cakes with a <equip ref="fork">fork</equip></item>
+        <item xml:id="step9" num="9">Space the cakes out on <equip ref="bakeSheet">paper</equip> and <step ref="#step1">bake</step> until the cakes are golden brown</item>
+        <item xml:id="step10" num="10">Serve <equip ref="coolRack">cold</equip> with <bgRef ref="#bgSyllabub">syllabub</bgRef></item>
     </recList>
         
     <link linktype="print">Shrewsberry (Shrewsbury) Cakes   - print view  Shrewsberry (Shrewsbury) Cakes - print view</link>

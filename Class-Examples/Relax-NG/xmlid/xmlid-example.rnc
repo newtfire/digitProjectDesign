@@ -1,5 +1,6 @@
 start = recipe
 recipe = element recipe {mixed{(title | about | p | pict | credit | recList | link)*}}
+# ebb: I think you probably don't really want recipe to mixed, b/c you don't want people typing in between these elements.
 title = element title {text}
 about = element about {mixed{subtitle, health, diff, link*}}
 subtitle = element subtitle {text}
@@ -14,8 +15,12 @@ p = element p {mixed{(type? | bg | bgRef | blockQuote | link)*}, text}
 type = attribute type {text}
 bg = element bg {xmlid, text}
 xmlid = attribute xml:id {xsd:ID}
+#ebb: The xsd:ID that is the content of xml:id is a datatype and it's meant for distinct identifiers.
+# This ensures that all values of @xml:id are different from each other so they are really distinct.
 bgRef = element bgRef {ref, text}
-ref = attribute ref {text}
+ref = attribute ref {xsd:IDREF}
+# ebb: This coding is fine for just Relax NG and XML, but maybe not robust enough for the human project team.
+# xsd:ID is meant to go with xsd:IDREF in old-fashioned schema coding.
 blockQuote = element blockQuote {mixed{oldSp*}, text}
 oldSp = element oldSp {modern?, text}
 modern = attribute modern {text}
