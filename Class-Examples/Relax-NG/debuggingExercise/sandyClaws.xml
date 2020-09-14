@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="sandyClaws.rnc" type="application/relax-ng-compact-syntax"?>
+<song><title>Kidnap the Sandy Claws</title>
+<about>  
+    
+<Prod>Walt Disney Records</Prod>
+<Feat>Featuring <name who="PaulReub">Paul Reubens</name>,<name who="CathOHar">Catherine O’Hara</name> and, <name who="DanElf"> Danny Elfman</name></Feat>
+<Prod>Produced by Walt Disney Records</Prod>
+<Album>Album The Nightmare Before Christmas (Special Edition)</Album>
+<credits>Written By <name who= "DanElf">Danny Elfman</name></credits>
+<Date when= "1993-10-12">Release Date October 12, 1993</Date>
+</about>
+
+
+
+<Characters who="lock">LOCK</Characters>
+, <Characters who="shock"> SHOCK </Characters>+ <Characters who="barrel">BARREL</Characters>]
+<Verse>Kidnap <Character who="Santa">Mr. Sandy Claws</Character>...</Verse>
+
+<Characters who="lock">[LOCK]</Characters>
+<Verse>I wanna do it!</Verse>
+
+<Characters who="barrel">[BARREL]</Characters>
+<Verse>Let's draw straws!</Verse>
+
+<Characters who="shock">[SHOCK]</Characters>
+    <Verse><Characters who="Jack">[Jack</Characters> said we should work together</Verse>
+
+<Characters wh="barrel">[BARREL]</Characters>
+<Verse><Alias who="lock,shock,barrel">Three of a kind</Alias></Verse>
+
+<Characters who="lock">[LOCK]</Characters>
+<Verse><Alias who="lock,shock,barrel">Birds of a feather,</Alias></Verse>
+
+<Characters who="lock">LOCK</Characters>
+, <Characters who="shock"> SHOCK </Characters>+ <Characters who="barrel">BARREL</Characters>]
+<Verse>Now and forever
+Wheeee
+La, la, la, la, la
+
+Kidnap the <Character who="Santa">Sandy Claws</Character>,lock him up real tight
+Throw away the key and then
+Turn off all the lights</Verse>
+
+<Characters who="shock">[SHOCK]</Characters>
+<Verse>First, we're going to set some bait
+Inside a nasty trap and wait
+When he comes a-sniffing we will
+Snap the trap and close the gate</Verse>
+
+<Characters who="lock">[LOCK]</Characters>
+<Verse>Wait! I've got a better plan
+    To catch this <Alias who="Santa">big red lobster man</Alias>
+Let's pop him in a boiling pot
+And when he's done we'll butter him up</Verse>
+
+<Characters who="lock">LOCK</Characters>
+, <Characters who="shock"> SHOCK </Characters>+ <Characters who="barrel">BARREL</Characters>]
+<Verse>Kidnap the <Character who="Santa">Sandy Claws</Character>
+Throw him in a box
+Bury him for ninety years
+Then see if he talks</Verse>
+
+<Characters who="shock">[SHOCK]</Characters>
+<Verse>Then <Characters who="Boogie">Mr. Oogie Boogie man</Characters>
+Can take the whole thing over then
+He'll be so pleased, I do declare
+That he will cook him rare</Verse>
+
+<Characters who="lock">LOCK</Characters>
+, <Characters who="shock"> SHOCK </Characters>+ <Characters who="barrel">BARREL</Characters>]
+<Verse>Wheeee!</Verse>
+
+<Characters who="Boogie">[OOGIE BOOGIE]</Characters>
+<Verse>Oooooohooo! Yum,yum,yum,yum</Verse>
+
+<Characters who="lock">[LOCK]</Characters>
+<Verse>I say that we take a cannon
+Aim it at his door and then
+Knock three times and when he answers
+<Character who="Santa">Sandy Claws</Character> will be no more</Verse>
+
+<Characters who="shock">[SHOCK]</Characters>
+<Verse>You're so stupid, think now
+If we blow him up into smithereens
+We may lose some pieces
+And then <Character who="Jack">Jack</Character> will beat us black and green</Verse>
+
+<Characters who="lock">LOCK</Characters>
+, <Characters who="shock"> SHOCK </Characters>+ <Characters who="barrel">BARREL</Characters>]
+<Verse>Kidnap the <Character who="Santa">Sandy Claws</Character>
+Tie him in a bag
+Throw him in the ocean
+Then see if he is sad</Verse>
+
+<Characters who="lock">[LOCK</Characters><Characters who="shock"> SHOCK ]</Characters>
+<Verse>Because <Character who="Boogie">Mr. Oogie Boogie</Character> is the meanest guy around
+If I were on his <Character who="Santa">Boogie</Character> list, I'd get out of town</Verse>
+
+[<Characters who="barrel">BARREL]</Characters>
+<Verse>He'll be so pleased by our success
+That he'll reward us too, I'll bet</Verse>
+
+<Characters who="lock">LOCK</Characters>
+, <Characters who="shock"> SHOCK </Characters>+ <Characters who="barrel">BARREL</Characters>]
+<Verse>Perhaps he'll make his special brew
+Of snake and spider stew
+Mmmmmm!
+
+We're his little henchmen
+And we take our job with pride
+We do our best to please him
+And stay on his good side</Verse>
+
+<Characters who="shock">[SHOCK]</Characters>
+ab<Verse>I wish my<Alias who="lock,barrel"> cohorts</Alias> weren't so dumb</Verse>
+
+<Characters who="barrel">[BARREL]</Characters>
+<Verse>I'm not the dumb one</Verse>
+
+[<Characters who="lock">LOCK]</Characters>
+<Verse>You're no fun</Verse>
+
+<Characters who="shock">[SHOCK]</Characters>
+<Verse>Shut up!</Verse>
+
+<Characters who="lock">[LOCK]</Characters>
+<Verse>Make me</Verse>
+
+<Characters who="shock">[SHOCK]</Characters>
+<Verse>I've got something, listen up
+This one is real good, you'll see
+We'll send a present to his door
+Upon there'll be a note to read
+Now, in the box we'll wait and hide
+Until his curiousity...</Verse>
+
+<Characters who="lock">LOCK</Characters>
+, <Characters who="shock"> SHOCK </Characters>+ <Characters who="barrel">BARREL</Characters>]
+<Verse>Entices him to look inside
+And then we'll have him
+One, two, three</Verse>
+
+<Characters who="lock">LOCK</Characters>
+, <Characters who="shock"> SHOCK </Characters>+ <Characters who="barrel">BARREL</Characters>]
+<Verse>Kidnap the <Character who="Santa">Sandy Claws</Character>, beat him with a stick
+Lock him up for ninety years, see what makes him tick
+
+Kidnap the <Character who="Santa">Sandy Claws</Character>, chop him into bits
+<Character who="Boogie">Mr. Oogie Boogie</Character> is sure to get his kicks
+Kidnap the <Character who="Santa">Sandy Claws</Character>, see what we will see
+Lock him in a cage and then throw away the key!!!
+Ha,ha,ha,ha!</Verse>
+
+<Characters who="Boogie">[OOGIE BOOGIE]</Characters>
+<Verse><Character who="Santa">Sandy Claws</Character>, hm... ?</Verse>
+
+</song>   

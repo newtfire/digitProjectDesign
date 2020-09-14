@@ -1,0 +1,23 @@
+start = xml
+xml = element xml {meta, poem}
+
+meta = element meta {title, author, publication, source}
+title = element title {type?, text}
+author = element author {text}
+publication = element publication {title, pubPlace, date}
+
+type = attribute type {"journal"}
+pubPlace = element pubPlace {text}
+date = element date {when, text}
+when = attribute when {xsd:date}
+source = element source {text, ref}
+ref = element ref {target}
+target = attribute target {text}
+
+poem = element poem {l+}
+l = element l {n, mixed { (person | place | fragment | object)* }}
+person = element person {text}
+place = element place {text}
+fragment = element fragment {text}
+object = element object {text}
+n = attribute n {xsd:integer}

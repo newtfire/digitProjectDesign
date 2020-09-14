@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="nesting-rules.rnc" type="application/relax-ng-compact-syntax"?>
+<recipe><para>Shrewsberry/Shrewsbury cakes are a kind of biscuit. They are less crumbly than a shortbread but have a buttery flavour. Sweet foods like biscuits were popular with the Georgians and were easier to make because of the the increased importing of sugar from the sugar plantations in the Caribbean.
+They were made to accompany many dishes but were popular with syllabub, which is a sugared, whipped cream, flavoured with cider or sherry. Sugar was an important trade item and refined (white) sugar was very fashionable.
+</para>
+
+<para>This recipe uses white sugar, which would have been pinched off a sugarloaf and then ground (beaten) until fine enough to use in the recipe.</para>
+
+<para>Traditionally they are baked as thick, large biscuits and were able to be kept for long periods of time. </para>
+
+<para>This recipe comes from ' A delightful Daily Exercise for Ladies and Gentlewomen' </para>
+
+<BlockQuote>Take a quart of very fine flouwer, eight onces of fine sugar beaten and cersed, twelve ounces sweet butter, nutmeg grated, damaske rosewater- work together with your hands for halfe an houre, then roule in little round cakes about the thickness of three shillings, then take a glasse and cut the cakes, then strow some flower on white papers and bake them in an oven as hotte as for manchet. If the oven be not hotte sett your lid downe ( there is a long explanantion for testing/changing the heat in the  period oven which i have omitted)  until they be baked enough, for they must lokke browne not white. you may keep them halfe a yeare but new baked are best.</BlockQuote>
+
+
+<ImageGuide>For images of the cooking process see our Shrewsbury Cakes Pictures.</ImageGuide>
+
+<thanks>With thanks to <person>Ian Pycroft</person> of <place>Black Knight Historical</place> and to <place>The Georgian House, <city>Bristol</city></place>.</thanks>
+
+<heading>Ingredients</heading>
+<ingred xml:id="flr" quant="4" unit="oz">4oz plain white flour</ingred>
+<ingred xml:id="sgr" quant="4" unit="oz">4oz white, caster sugar</ingred>
+<ingred xml:id="bttr" quant="4" unit="oz">4oz salted butter (very soft, works best)</ingred>
+<ingred xml:id="ntmg" quant="0.25" unit="teaspoon">1/4 teaspoon of grated (or ground) nutmeg</ingred>
+<inged xml:id="rswtr" LowQuant="2" HighQuant="3" Avg="2.5">2-3 teaspoon rosewater</inged>
+<ingred xml:id="tpwtr" LowQuant="3" HighQuant="5" Avg="4">3-5 tablespoons tapwater (at room temperature)</ingred>
+<OptIngred>optional: a little caster sugar to <action>sprinkle</action> on the top</OptIngred>
+<note>( Note: You may need more water to make a stiff dough, it will depend on the flour you use.)</note>
+
+<heading>Equipment</heading>
+<ListTools>
+<tool xml:id="WghScales">Weighing scales</tool>
+<tool xml:id="Tsp">Teaspoon</tool>
+<tool xml:id="Tbsp">Tablespoon</tool>
+<tool xml:id="Grt">Grater (optional)</tool>
+<tool xml:id="MixBowl">Mixing bowl</tool>
+<tool xml:id="WdnSpoon">Wooden spoon</tool>
+<tool xml:id="RllgPin">Rolling pin</tool>
+<tool xml:id="LrgCutter">Large cutter</tool>
+<tool xml:id="Frk">Fork</tool>
+<tool xml:id="BkgSheet">Baking sheet</tool>
+<tool xml:id="CllgRack">Cooling rack</tool></ListTools>
+
+<heading>Making and cooking it</heading>
+<advice>Always wash your hands before preparing food.</advice>
+
+<ListSteps><step val="1"><action>Heat</action> the <appliance>oven</appliance> with a good fire</step>
+    <!--What tempature should I use?-->
+<step val="2">Put the <ingreds><ingred ptr="#flr">flour</ingred>, <ingred ptr="#sgr">sugar</ingred> and <ingred ptr="#bttr">butter</ingred></ingreds> into a <tool ptr="#MixBowl">bowl</tool> and <action>mix</action> well with a <tool ptr="#Frk">fork</tool>. You should end up with fine <product>breadcrumbs</product>. If the <ingred ptr="#bttr">butter</ingred> is hard, you will need to <action>rub</action> it in with your fingertips, like making pastry</step>
+<step val="3">Add the <ingred ptr="#rswtr">rosewater</ingred> and enough <ingred ptr="tpwtr">water</ingred> to make a soft <product>dough</product></step>
+    <!-- How much water is enough?-->
+<step val="4"><action>Gather</action> the <product>dough</product> together with your fingers in the <tool ptr="#MixBowl">bowl</tool></step>
+<step val="5"><action>Kneed</action> lightly</step>
+<step val="6"><ingred>Flour</ingred> a surface and <action ptr="#RllgPin">roll</action> the <ingreds quant="3" unit="shillings" meas="depth">dough out to 3 shillings depth</ingreds></step>
+<step val="7">Use a <glassware>glass</glassware> to <action>cut</action> the <product>cakes</product> out</step>
+<step val="8"><action>Prick</action> the surface of the <product>cakes</product> with a <tool ptr="#Frk">fork</tool></step>
+<step val="9"><action>Space</action> the <product>cakes</product> out on paper and <goal><action>bake</action> until the <product>cakes</product> are golden brown</goal></step>
+<step val="10"><action>Serve</action> cold with syllabub</step>
+    <!-- Look up the recipe for syllabub -->
+</ListSteps>
+<UserInput>If you tried this recipe and liked it, tell us about it</UserInput>
+</recipe>

@@ -1,0 +1,72 @@
+default namespace = ""
+
+start =
+  element recipe {
+    element para { text }+,
+    element BlockQuote { text },
+    element ImageGuide { text },
+    element thanks {
+      (text
+       | element person { text }
+       | element place {
+           (text
+            | element city { xsd:NCName })+
+         })+
+    },
+    (ingred
+     | element ListTools { tool+ }
+     | element OptIngred { (text | action)+ }
+     | element heading { text }
+     | element inged {
+         attribute Avg { xsd:decimal },
+         attribute HighQuant { xsd:integer },
+         attribute LowQuant { xsd:integer },
+         attribute xml:id { xsd:NCName },
+         text
+       }
+     | element note { text })+,
+    element advice { text },
+    element ListSteps {
+      element step {
+        attribute val { xsd:integer },
+        (text
+         | action
+         | ingred
+         | product
+         | tool
+         | element appliance { xsd:NCName }
+         | element glassware { xsd:NCName }
+         | element goal { (text | action | product)+ }
+         | element ingreds {
+             attribute meas { xsd:NCName }?,
+             attribute quant { xsd:integer }?,
+             attribute unit { xsd:NCName }?,
+             (text | ingred)+
+           })+
+      }+
+    },
+    element UserInput { text }
+  }
+tool =
+  element tool {
+    attribute ptr { text }?,
+    attribute xml:id { xsd:NCName }?,
+    text
+  }
+ingred =
+  element ingred {
+    attribute Avg { xsd:integer }?,
+    attribute HighQuant { xsd:integer }?,
+    attribute LowQuant { xsd:integer }?,
+    attribute ptr { text }?,
+    attribute quant { xsd:decimal }?,
+    attribute unit { xsd:NCName }?,
+    attribute xml:id { xsd:NCName }?,
+    text
+  }
+action =
+  element action {
+    attribute ptr { text }?,
+    xsd:NCName
+  }
+product = element product { xsd:NCName }
