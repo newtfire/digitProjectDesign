@@ -3,7 +3,7 @@ song = element song {title, about, Characters+, Verse}
 title = element title {text}
 about = element about {Prod+, Feat, Album,credits, Date}
 Prod = element Prod{text}
-Feat = element Feat {name+,text}
+Feat = element Feat { mixed {name+} }
 name = element name {who+,text}
 Album = element Album {text}
 credits = element credits {text, name+}
@@ -12,5 +12,5 @@ when = attribute when {xsd:date}
 Characters = element Characters {who+, text}
 who = attribute who {"lock,barrel"|"lock,shock,barrel"|"lock"| "shock"| "Santa"| "Jack"| "barrel"| "Boogie"|
 "PaulReub"| "CathOHar"| "DanElf" }
-Verse = element Verse{text, mixed{(Alias*, Characters*)*}}
+Verse = element Verse{mixed{(Alias*, Characters*)*}}
 Alias = element Alias {who+,text}
