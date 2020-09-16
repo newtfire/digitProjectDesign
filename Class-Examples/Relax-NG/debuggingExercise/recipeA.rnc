@@ -1,23 +1,34 @@
 start = recipe
-recipe = element recipe {name, title, about, p+, pics, credits, list+, text}
+recipe = element recipe {name, title, about, p+, pics, credits, \list+, text}
 name = attribute name {"Shrewsberry (Shrewsbury)Cakes"}
+# Document your code and your reasons for writing rules in this way so your team understands.
 title = element title {text}
 about = element about {text}
-p = element p {type+, text, blockQuote}
-type = attribute type {"history"}
+p = element p {type?, mixed{blockQuote*}}
+type = attribute type {"Process" | "history" | "equipment" | "ingredients" | "sweetener" | "dairy" | "quant" |  "unit" | "spice" | "liquid" | "additionalInfo" | xsd:integer}
 blockQuote = element blockQuote {text}
 pics = element pics {text}
 credits = element credits {text}
-list = element list {type+, listName+, item+}
-type = attribute type {"ingredients"}
+\list = element list {type, listName+, item+}
+# type = attribute type {"ingredients"}
 listName = element listName {text}
-item = element item {type+, "sweetener", "dairy", "quant", "unit", "spice", "liquid", "additionalInfo", text}
-list = element list {type+, listName+, item+}
-type = attribute type {"equipment"}
-listName = element listName {text}
-item = element item {text}
-list = element list {type+, listName+, item+}
-type = attribute type {"Process"}
-listName = element listName {text}
-item = element item {type+, text}
-type = attribute type {xsd:integer}
+item = element item {type?, quant?, unit?, text}
+quant = attribute quant {xsd:integer}
+unit = attribute unit {text}
+
+
+
+#  list = element list {type+, listName+, item+}
+# type = attribute type {"equipment"}
+# listName = element listName {text}
+# item = element item {text}
+# list = element list {type+, listName+, item+}
+# type = attribute type {"Process"}
+# listName = element listName {text}
+# item = element item {type+, text}
+#type = attribute type {xsd:integer}
+
+# There are reserve words in Relax NG are:
+# text
+# mixed
+# list (allows for a list/sequence  of multiple attribute values)
