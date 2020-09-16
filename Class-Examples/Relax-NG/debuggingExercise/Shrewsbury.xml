@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?xml-model href="alexander_Sept_14.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="recipeA.rnc" type="application/relax-ng-compact-syntax"?>
 <recipe name="Shrewsberry (Shrewsbury)Cakes">
     <title> Shrewsberry Cakes</title>
     
