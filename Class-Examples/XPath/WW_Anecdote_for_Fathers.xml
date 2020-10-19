@@ -15,6 +15,7 @@
       </fileDesc>
    </teiHeader>
    <text>
+      <!--ebb: XML comment so we have a comment node. -->
       <body>
          <lg>
             <l xml:id="n1">I have a boy of five years old,</l>
