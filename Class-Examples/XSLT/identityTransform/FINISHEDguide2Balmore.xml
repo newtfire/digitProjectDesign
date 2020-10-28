@@ -5,17 +5,17 @@
     </writer>
     <Acquisition>
         <NPC>
-            <who ref="#Codus Callonus">Codus Callonus</who></NPC>
+            <who ref="#Codus">Codus Callonus</who></NPC>
         <NPC>
-            <who ref="#Dorisa Darvel">Dorisa Darvel</who></NPC>
+            <who ref="#Dorisa">Dorisa Darvel</who></NPC>
         <NPC>
-            <who ref="#Falvel Arenim"> Falvel Arenim </who></NPC>
+            <who ref="#Falvel"> Falvel Arenim </who></NPC>
         <NPC>
-            <who ref="#Phane Rielle"> Phane Rielle </who></NPC>
+            <who ref="#Phane"> Phane Rielle </who></NPC>
         <NPC>
-            <who ref="#Segunivus Mantedius"> Segunivus Mantedius </who></NPC>
+            <who ref="#Segunivus"> Segunivus Mantedius </who></NPC>
         <NPC>
-            <who ref="#Sovor Trandel"> Sovor Trandel</who>
+            <who ref="#Sovor"> Sovor Trandel</who>
         </NPC>  
         <item>random_book_imperial_dunmer</item>
     </Acquisition>
