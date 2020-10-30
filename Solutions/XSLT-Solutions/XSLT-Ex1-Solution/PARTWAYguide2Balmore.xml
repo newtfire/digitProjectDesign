@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="morrowindBookSchema.rnc" type="application/relax-ng-compact-syntax"?><Book>
+    <book_title xmlid="guideToBalmora">Guide to <placeBLORT ref="Balmora">Balmora</placeBLORT></book_title>
+    <writer listed="no">
+        <who xmlid="Anonymous">Anonymous</who>
+    </writer>
+    <Acquisition>
+        <NPC>
+            <who xmlid="Codus Callonus">Codus Callonus</who></NPC>
+        <NPC>
+            <who xmlid="Dorisa Darvel">Dorisa Darvel</who></NPC>
+        <NPC>
+            <who xmlid="Falvel Arenim"> Falvel Arenim </who></NPC>
+        <NPC>
+            <who xmlid="Phane Rielle"> Phane Rielle </who></NPC>
+        <NPC>
+            <who xmlid="Segunivus Mantedius"> Segunivus Mantedius </who></NPC>
+        <NPC>
+            <who xmlid="Sovor Trandel"> Sovor Trandel</who>
+        </NPC>  
+        <item>random_book_imperial_dunmer</item>
+    </Acquisition>
+    <contents>
+        <p><location visitable="yes">Balmora</location> is the district seat of House Hlaalu, and the
+        largest settlement on <placeBLORT ref="Vvwardenfell">Vvardenfell</placeBLORT> after <placeBLORT ref="Vivec-City">Vivec City</placeBLORT>. <placeBLORT ref="Balmora">Balmora</placeBLORT>'s
+        four districts are <placeBLORT ref="High-Town">High Town</placeBLORT>, the</p>
+        <p><placeBLORT ref="Commercial-District">Commercial District</placeBLORT>, <placeBLORT ref="Labor-Town">Labor
+            Town</placeBLORT>, and <placeBLORT ref="Fort-Moonmoth">Fort Moonmoth</placeBLORT>. <placeBLORT ref="High-Town">High Town</placeBLORT>, on the hill to the west, has the <placeBLORT ref="Tribunal-Temple">Tribunal Temple</placeBLORT>, <placeBLORT ref="Hlaalu-Council">Hlaalu Council
+                Hall</placeBLORT>, rich manors, better shops, and the <placeBLORT ref="Morag-Tong-guildhall">Morag Tong
+            guildhall</placeBLORT>. <placeBLORT ref="Commercial-District">The Commercial
+                District</placeBLORT>, just west of the river, is centered on the large
+        plaza north of South Gate, with the <placeBLORT ref="strider-port">strider port along the south
+            wall</placeBLORT>, east of South Gate. The Fighters Guild and Mages Guild, and most of
+            <placeBLORT ref="Balmora">Balmora</placeBLORT>'s shops and inns, are located along the
+        streets of the <placeBLORT ref="Commercial-District">Commercial District</placeBLORT>. <placeBLORT ref="Labor-Town">Labor Town</placeBLORT>, east of the river, where the commoners and poor
+        live, has several modest cornerclubs and a few merchants. <placeBLORT ref="Fort-Moonmoth">Fort
+            Moonmoth</placeBLORT>, a long walk southeast of town, houses the Legion garrison and the
+        Imperial cult. Services House Hlaalu services are available at <placeBLORT ref="Hlaalu-Council-Manor">Hlaalu Council Manor</placeBLORT> in <location visitable="yes">High Town</location>.
+        Temple faithful seek solace and services at the <placeBLORT ref="Balmora">Balmora
+            Temple</placeBLORT> in the southeast. Outlanders must travel outside the town walls,
+        through South Gate and east along well-marked roads to <placeBLORT ref="Fort-Moonmoth">Fort
+            Moonmoth</placeBLORT> for Imperial Legion and the Imperial cult services. The guildhalls
+        of the Fighters Guild and Mages Guild are on the street north from the plaza in the
+            <placeBLORT ref="Commercial-District">Commercial District</placeBLORT>. Morag Tong services are
+        available at their guildhall in the extreme northwest of <placeBLORT ref="High-Town">High Town</placeBLORT>. Better shops are in <placeBLORT ref="High-Town">High Town</placeBLORT> on the hill, with numerous merchants in the
+            <placeBLORT ref="Commercial-District">Commercial District</placeBLORT>, west of the river, and a few
+        traders in <placeBLORT ref="Labor-Town">Labor Town</placeBLORT>, east of the river. Notable
+        Figures None of the Hlaalu counselors live in <placeBLORT ref="Balmora">Balmora</placeBLORT>.
+        <NPC who="Nileno Dorvayn">Nileno Dorvayn</NPC> at the Council Hall is the ranking Hlaalu
+        local. At the Fighters Guild, Eydis Fire-Eye is the steward. <NPC who="Ranis Athrys">Ranis
+            Athrys</NPC> is the Mages Guild steward. <NPC who="Ethasi Rilvayn">Ethasi Rilvayn</NPC>
+        is the Morag Tong steward. <NPC who="Feldrelo Sadri">Feldrelo Sadri</NPC> is the ranking
+                cleric of the <placeBLORT ref="Balmora-Tribunal-Temple">Balmora Tribunal Temple</placeBLORT>. The colorful
+            <NPC who="'Sugar Lips' Habasi">'Sugar Lips' Habasi</NPC>, a freelance facilitator of no
+        fixed address, is often rumored to be the local boss of the Thieves Guild. Transportation A
+        good road leads south to <placeBLORT ref="Pelagiad">Pelagiad</placeBLORT>, <placeBLORT ref="Seyda-Neen">Seyda Neen</placeBLORT>, <location visitable="yes">Ebonheart</location>,
+        and <placeBLORT ref="Vivec">Vivec</placeBLORT>. A rugged wilderness track leads southwest
+        along the Odai River to the fishing village of <placeBLORT ref="Hla-Oad">Hla Oad</placeBLORT>.
+        Improved roads head north to Caldera and <placeBLORT ref="Ald'ruhn">Ald'ruhn</placeBLORT>. The
+        silt strider port is on the west side of the river near South Gate. Silt strider service
+        goes to <placeBLORT ref="Ald'ruhn">Ald'ruhn</placeBLORT>, <placeBLORT ref="Suran">Suran</placeBLORT>, <location visitable="yes">Ald'ruhn</location>, and <location visitable="yes">Seyda Neen</location>. Guild guides at the Mages Guild can teleport you
+        to <placeBLORT ref="Ald'ruhn">Ald'ruhn</placeBLORT>, <placeBLORT ref="Vivec">Vivec</placeBLORT>, <placeBLORT ref="Caldera">Caldera</placeBLORT>, and <placeBLORT ref="Sadrith-Mora">Sadrith Mora</placeBLORT> for a fee. <placeBLORT ref="Hla-Oad">Hla
+            Oad</placeBLORT> is southwest on the coast. An unimproved trail leads northeast up the
+        ravines of <placeBLORT ref="Foyada-Mamaea">Foyada Mamaea</placeBLORT> to <placeBLORT ref="Ghostgate">Ghostgate</placeBLORT>; the path is easy to follow, but dangerous beasts threaten
+        pilgrims who travel this route to <placeBLORT ref="Ghostgate">Ghostgate</placeBLORT>
+        shrine.</p></contents>
+</Book>
