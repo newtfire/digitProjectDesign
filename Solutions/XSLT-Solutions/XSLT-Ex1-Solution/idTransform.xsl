@@ -5,22 +5,25 @@
     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
     exclude-result-prefixes="xs math xd"
     version="3.0">
-    <xd:doc scope="stylesheet">
+<!--    <xd:doc scope="stylesheet">
         <xd:desc>
             <xd:p><xd:b>Created on:</xd:b> Oct 27, 2020</xd:p>
             <xd:p><xd:b>Author:</xd:b> eeb4</xd:p>
             <xd:p>XSLT Identity Transformation for the Fall 2020 Elder Scrolls project's 
                 Morrowind Book files</xd:p>
         </xd:desc>
-    </xd:doc>
+    </xd:doc>-->
     
     <xsl:mode on-no-match="shallow-copy"/>
+    
     <xsl:template match="who[@xmlid]">
-        <who ref="#{tokenize(@xmlid, ' ')[1]}"><xsl:apply-templates/></who>
+        <who ref="#{tokenize(@xmlid, '\s+')[1]}">
+        <xsl:apply-templates/>
+       </who>
     </xsl:template>
     
     <xsl:template match="location[@xmlid]">
-        <location ref="#{translate(@xmlid, ' ', '-')}" visitable="{@visitable}">
+        <location ref="#{replace(@xmlid, '\s+', '-')}" visitable="{@visitable}">
             <xsl:apply-templates/>
         </location> 
     </xsl:template>
