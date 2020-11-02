@@ -15,6 +15,9 @@
     </xd:doc>-->
     
     <xsl:mode on-no-match="shallow-copy"/>
+   
+    <-- Jeremy.F: Is it correct to just make all xmlid attributes into ref attributes instead of making two changes to the document's 'location' and 'who' elements?
+    So then you could go down to  <xsl:template match="location[@xmlid]"> And make it  <xsl:template match="location[@ref]"> instead? -->
     
     <xsl:template match="who[@xmlid]">
         <who ref="#{tokenize(@xmlid, '\s+')[1]}">
