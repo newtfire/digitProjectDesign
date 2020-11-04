@@ -16,6 +16,19 @@
     <xsl:output method="xhtml" encoding="utf-8" doctype-system="about:legacy-compat"
         omit-xml-declaration="yes"/>
     
+    <xsl:template match="/">
+        <html>
+            <head>
+                <title><xsl:apply-templates select="descendant::groupName"/></title>
+            </head>
+            <body>
+                <h1></h1>
+                
+                
+                
+            </body>
+        </html>    
+    </xsl:template>
     
   
       

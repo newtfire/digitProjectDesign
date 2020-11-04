@@ -24,19 +24,31 @@
                    <xsl:apply-templates select="descendant::discography"/>                  
                </ul>
                
-               <h2>Members</h2>
+              <h2>Members</h2>
                <xsl:apply-templates select="descendant::memberList"/>
               
            </body>
        </html>
     </xsl:template>
    
-    <xsl:template match="album">
+ <xsl:template match="discography/album">
         <li><xsl:apply-templates/></li>
     </xsl:template>
+    
     <xsl:template match="member">
-       
+        <img src="{portrait}" alt="Picture of {stageName}"/>  
+       <ol>
+          <xsl:apply-templates select="role"/>
+       </ol> 
+        <hr/>
     </xsl:template>
+    
+    
+   <xsl:template match="role/position">
+       <li><xsl:apply-templates/></li>
+       
+   </xsl:template> 
+
     
     
 </xsl:stylesheet>

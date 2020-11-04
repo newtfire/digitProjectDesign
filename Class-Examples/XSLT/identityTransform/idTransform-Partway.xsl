@@ -15,12 +15,18 @@
     </xd:doc>
     
     <xsl:mode on-no-match="shallow-copy"/>
+    
+    
+    
  <!--2020-10-27 ebb: This is the special line of code that creates an XSLT identity transformation. -->
     
     <xsl:template match="location[@xmlid]">
-        <placeBLORT ref="{replace(@xmlid, '\s+', '-')}"> 
-             <xsl:apply-templates/>
-        </placeBLORT>
+        <placeBLORT ref="{replace(@xmlid, '\s+', '-')}">
+            
+            <xsl:apply-templates/>
+        </placeBLORT> 
+           
+        
     </xsl:template>
         
             
