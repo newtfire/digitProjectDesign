@@ -8,7 +8,7 @@
     version="3.0">
    <!-- <xd:doc scope="stylesheet">
         <xd:desc>
-            <xd:p><xd:b>Created on:</xd:b> Oct 30, 2020</xd:p>
+            <xd:p><xd:b>Created on:</xd:b> November 4, 2020</xd:p>
             <xd:p><xd:b>Author:</xd:b> eeb4</xd:p>
             <xd:p>XSLT to create an HTML page from the James Bond Intro Songs as coded by the JamesBondMCI team.</xd:p>
         </xd:desc>
@@ -38,7 +38,7 @@
     
    <xsl:template match="lb">
        <br/><span class="lineNumber"><xsl:value-of select="count(preceding::lb) + 1"/></span>
-   </xsl:template><!-- You'd use the preceding-sibling:: if you want line numbers only inside stanzas and to restart the count at the next stanza.-->
+   </xsl:template><!--ebb: You'd use the preceding-sibling:: if you want line numbers only inside stanzas and to restart the count at the next stanza.-->
     
     <xsl:template match="POV">
         <span class="{name()}-{@V}"> 
