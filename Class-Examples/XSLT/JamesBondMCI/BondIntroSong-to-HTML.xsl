@@ -10,7 +10,7 @@
         <xd:desc>
             <xd:p><xd:b>Created on:</xd:b> Oct 30, 2020</xd:p>
             <xd:p><xd:b>Author:</xd:b> eeb4</xd:p>
-            <xd:p>XSLT to create an HTML page listing band members for KPop Group Profile pages</xd:p>
+            <xd:p>XSLT to create an HTML page from the James Bond Intro Songs as coded by the JamesBondMCI team.</xd:p>
         </xd:desc>
     </xd:doc>-->
     <xsl:output method="xhtml" encoding="utf-8" doctype-system="about:legacy-compat"
