@@ -28,11 +28,40 @@
              <!--Remember, the displayed page of your HTML goes inside the <body> element. -->   
                 <h1>Ingredients Table from <xsl:apply-templates select="descendant::recipe/@name"/></h1>   
                 
+                <h2><xsl:apply-templates select="descendant::list[@type='ingredients']/label"/></h2>
+              <table>
+                  <tr><th>ingredID</th>
+                      <th>Quantity</th>
+                      <th>Unit</th>
+                      <th>Type</th>
+                      <th>Step(s) used in the recipe</th>
+                  </tr>
+                  
+                  <xsl:apply-templates select="descendant::list[@type='ingredients']/item"/>
+                  
+              </table> 
                 
-                
+           <h2>Equipment</h2>
+                <ul>
+                    
+                </ul>
             </body>
-            
-            
         </html>
     </xsl:template>
+    
+    <xsl:template match="list[@type='ingredients']/item">
+        <!--The @match is known as the "context node". -->
+        <tr>
+            <td><xsl:apply-templates select="@xml:id"/></td>
+            <td><xsl:apply-templates select="@quant"/></td>
+            <td><xsl:apply-templates select="@unit"/></td>
+            <td><xsl:apply-templates select="@type"/></td>
+            <td><xsl:value-of select="following::list[@type='Instructions']/item[descendant::ingred[substring-after(@ptr, '#') = current()/@xml:id] ]/@type => string-join(', ')"/> </td>
+            
+            
+        </tr>
+        
+    </xsl:template>
+    
+    
 </xsl:stylesheet>
