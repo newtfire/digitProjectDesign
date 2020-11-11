@@ -7,7 +7,20 @@
  
     <!-- This is our root template establishing the structure of our HTML-output -->
     <xsl:template match="/">
-       
+        <html>
+            <head>
+                <title>Shakespeare Sonnets</title>
+            </head>
+            <body>
+                <h1>Shakespearean Sonnets</h1>
+                <h2>Contents</h2>
+   
+               
+                <hr/> <!-- horizontal rule line to separate sections-->
+                <h2>Poems</h2>
+              
+            </body>
+        </html>
     </xsl:template>
     
   
