@@ -20,6 +20,8 @@
                 <h2>Contents</h2>
                 <ul>
                     <xsl:apply-templates select="$sonnetsColl//sonnet" mode="toc"/>
+   
+                    
                     <!--ebb: We have to "CALL our variable" here, because we want to make a table of contents out of the files in our directory. We use a $ to indicate that we're calling a variable, and then we give the variable name.
                     -->
                 </ul>

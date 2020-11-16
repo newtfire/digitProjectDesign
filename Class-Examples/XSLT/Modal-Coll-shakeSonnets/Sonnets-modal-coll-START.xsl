@@ -11,13 +11,19 @@
         <html>
             <head>
                 <title>Sonnets by Shakespeare</title>
-                <link rel="stylesheet" type="text/css" href="style.css"/>
+            <link rel="stylesheet" type="text/css" href="style.css"/>
             </head>
             <body>
-                <h1>ShakespeareANNN Sonnets</h1>
+                <h1>ShakespeareaN Sonnets</h1>
                 <h2>Contents</h2>
                 <ul>
-                    <xsl:apply-templates select="$sonnetsColl//sonnet" mode="contents"/>
+                    <xsl:apply-templates select="$sonnetsColl//sonnet" mode="contents">
+                      <xsl:sort select="@number ! number()"/>
+                     <!--   <xsl:sort>
+                            <xsl:variable name="apos">'</xsl:variable>
+                            <xsl:value-of select="translate(line[1], $apos, '')"/>
+                        </xsl:sort>-->
+                    </xsl:apply-templates>
                     
                 </ul>
    
@@ -31,7 +37,8 @@
     </xsl:template>
     
     <xsl:template match="sonnet" mode="contents">
-        <li>Sonnet number <xsl:apply-templates select="@number"/>:<br/>
+        <li><a href="#N{@number}">Sonnet number <xsl:apply-templates select="@number"/></a>:<br/>
+            
             <xsl:apply-templates select="line[1]" mode="contents"/>
         </li> 
     </xsl:template>
