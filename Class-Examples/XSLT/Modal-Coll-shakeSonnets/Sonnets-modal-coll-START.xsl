@@ -37,7 +37,7 @@
     </xsl:template>
     
     <xsl:template match="sonnet" mode="contents">
-        <li><a href="#N{@number}">Sonnet number <xsl:apply-templates select="@number"/></a>:<br/>
+        <li>Sonnet number <xsl:apply-templates select="@number"/>:<br/>
             
             <xsl:apply-templates select="line[1]" mode="contents"/>
         </li> 
@@ -48,7 +48,7 @@
     </xsl:template>
     
     <xsl:template match="sonnet">
-        <h3 id="N{@number}"><xsl:apply-templates select="@number"/></h3>
+        <h3><xsl:apply-templates select="@number"/></h3>
         <ol>
             <xsl:apply-templates select="line"/> 
         </ol>
