@@ -5,9 +5,10 @@
     <desc><!--You could write a description of this SVG here.--></desc>
     <g alignment-baseline="baseline" transform="translate (25, 100)">
         <!--The "g" element just lets us *group* stuff together. -->
-     <circle cx="250" cy="150" r="50" stroke="red" fill="purple" stroke-width="4"/>  
+        <circle cx="320" cy="80" r="50" stroke="red" fill="orange" stroke-width="4"/>  
+     <circle cx="250" cy="150" r="100" stroke="red" fill="purple" stroke-width="4"/>  
         
-        <circle cx="320" cy="80" r="50" stroke="red" fill="purple" stroke-width="4"/>  
+       
         
         <!--<line x1="25" y1="-5" x2="500" y2="500" stroke="red" stroke-width="3"/>-->
         

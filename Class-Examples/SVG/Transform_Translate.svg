@@ -5,12 +5,12 @@
     <desc>Here's my cool SVG file</desc>
     <!--ebb: The g element below is used for grouping SVG shapes. In this case, we made a grouping and then moved altered its position to move it 25 units to the right and 500 units down the screen. -->
     <g alignment-baseline="baseline" transform="translate (5, 500)">
-        
-        
-        <line x1="25" y1="0" x2="700" y2="0" stroke="purple" stroke-width="5"/> 
-        
         <line x1="25" x2="25" y1="2" y2="-200" stroke="red" stroke-width="5"/>
-        <rect x="50" y="-250" width="30" height="250" fill="aqua" />    
+        
+        <line x1="25" y1="0" x2="700" y2="0" stroke="purple" stroke-width="50"/> 
+        
+       
+        <rect x="50" y="-250" width="30" height="50" fill="aqua" />    
         
     </g>
 </svg>
