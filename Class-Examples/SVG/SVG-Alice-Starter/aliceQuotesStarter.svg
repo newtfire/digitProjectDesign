@@ -3,5 +3,125 @@
    <g transform="translate(50, 800)">
       <line x1="0" y1="0" x2="1300" y2="0" stroke="indigo"/>
       <line x1="0" y1="0" x2="0" y2="-700" stroke="indigo"/>
+      <g id="Chap1">
+         <circle cx="100"
+                 cy="-250"
+                 r="5"
+                 stroke="black"
+                 stroke-width="22"
+                 fill="orange"/>
+         <text x="100" y="20" stroke="purple">Ch. 1</text>
+         <line/>
+      </g>
+      <g id="Chap2">
+         <circle cx="200"
+                 cy="-320"
+                 r="5"
+                 stroke="black"
+                 stroke-width="22"
+                 fill="orange"/>
+         <text x="200" y="20" stroke="purple">Ch. 2</text>
+         <line/>
+      </g>
+      <g id="Chap3">
+         <circle cx="300"
+                 cy="-460"
+                 r="5"
+                 stroke="black"
+                 stroke-width="22"
+                 fill="orange"/>
+         <text x="300" y="20" stroke="purple">Ch. 3</text>
+         <line/>
+      </g>
+      <g id="Chap4">
+         <circle cx="400"
+                 cy="-370"
+                 r="5"
+                 stroke="black"
+                 stroke-width="22"
+                 fill="orange"/>
+         <text x="400" y="20" stroke="purple">Ch. 4</text>
+         <line/>
+      </g>
+      <g id="Chap5">
+         <circle cx="500"
+                 cy="-520"
+                 r="5"
+                 stroke="black"
+                 stroke-width="22"
+                 fill="orange"/>
+         <text x="500" y="20" stroke="purple">Ch. 5</text>
+         <line/>
+      </g>
+      <g id="Chap6">
+         <circle cx="600"
+                 cy="-610"
+                 r="5"
+                 stroke="black"
+                 stroke-width="22"
+                 fill="orange"/>
+         <text x="600" y="20" stroke="purple">Ch. 6</text>
+         <line/>
+      </g>
+      <g id="Chap7">
+         <circle cx="700"
+                 cy="-210"
+                 r="5"
+                 stroke="black"
+                 stroke-width="22"
+                 fill="orange"/>
+         <text x="700" y="20" stroke="purple">Ch. 7</text>
+         <line/>
+      </g>
+      <g id="Chap8">
+         <circle cx="800"
+                 cy="-400"
+                 r="5"
+                 stroke="black"
+                 stroke-width="22"
+                 fill="orange"/>
+         <text x="800" y="20" stroke="purple">Ch. 8</text>
+         <line/>
+      </g>
+      <g id="Chap9">
+         <circle cx="900"
+                 cy="-570"
+                 r="5"
+                 stroke="black"
+                 stroke-width="22"
+                 fill="orange"/>
+         <text x="900" y="20" stroke="purple">Ch. 9</text>
+         <line/>
+      </g>
+      <g id="Chap10">
+         <circle cx="1000"
+                 cy="0"
+                 r="5"
+                 stroke="black"
+                 stroke-width="22"
+                 fill="orange"/>
+         <text x="1000" y="20" stroke="purple">Ch. 10</text>
+         <line/>
+      </g>
+      <g id="Chap11">
+         <circle cx="1100"
+                 cy="0"
+                 r="5"
+                 stroke="black"
+                 stroke-width="22"
+                 fill="orange"/>
+         <text x="1100" y="20" stroke="purple">Ch. 11</text>
+         <line/>
+      </g>
+      <g id="Chap12">
+         <circle cx="1200"
+                 cy="-90"
+                 r="5"
+                 stroke="black"
+                 stroke-width="22"
+                 fill="orange"/>
+         <text x="1200" y="20" stroke="purple">Ch. 12</text>
+         <line/>
+      </g>
    </g>
 </svg>

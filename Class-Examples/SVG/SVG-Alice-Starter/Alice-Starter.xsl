@@ -16,15 +16,28 @@
             <!--X axis --> 
             <line x1="0" y1="0" x2="{13 * $Xinterval}" y2="0" stroke="indigo"/>
             <!--Y axis -->
-            <line x1="0" y1="0" x2="0" y2="{70 * -10}" stroke="indigo"/>
+            <line x1="0" y1="0" x2="0" y2="{70 * $Ystretcher}" stroke="indigo"/>
             <!--I'm guesstimating the height of my y axis based on the largest count of Alice's speeches in a chapter, returned when I ran this XPath over the source XML:
             //chapter/count(descendant::q[@sp='alice'])
             -->
+  
+        <xsl:for-each select="//chapter">
+            <xsl:variable name="Xpos" select="position() * $Xinterval"/>
+            
+            <xsl:variable name="Ypos" select="count(descendant::q[@sp='alice']) * $Ystretcher"/>
+            
+            <g id="Chap{position()}">
+               <circle cx="{$Xpos}" cy="{$Ypos}" r="5" stroke="black" stroke-width="22" fill="orange"/>
+            <text x="{$Xpos}" y="20" stroke="purple">Ch. <xsl:value-of select="@which"/></text>
            
-           
+               <line />
+            </g> 
+         </xsl:for-each>  
+
         </g>
        </svg>
    </xsl:template>
+   
     
     
 </xsl:stylesheet>
