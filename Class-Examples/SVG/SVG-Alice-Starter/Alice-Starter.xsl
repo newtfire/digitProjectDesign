@@ -27,10 +27,19 @@
             <xsl:variable name="Ypos" select="count(descendant::q[@sp='alice']) * $Ystretcher"/>
             
             <g id="Chap{position()}">
+     
+                 <xsl:choose>  
+                     <xsl:when test="following-sibling::chapter">   
+                 <line x1="{$Xpos}" y1="{$Ypos}" x2="{(position() + 1) * $Xinterval}" y2="{count(following-sibling::chapter[1]//q[@sp='alice']) * $Ystretcher}" stroke-width="2" stroke="black"/>
+             </xsl:when>
+                     <xsl:otherwise>
+                         <text x="{$Xpos}" y="-50" stroke="purple">THAT'S ALL FOLKS!</text>           
+                     </xsl:otherwise>
+</xsl:choose>
                <circle cx="{$Xpos}" cy="{$Ypos}" r="5" stroke="black" stroke-width="22" fill="orange"/>
             <text x="{$Xpos}" y="20" stroke="purple">Ch. <xsl:value-of select="@which"/></text>
            
-               <line />
+                
             </g> 
          </xsl:for-each>  
 
