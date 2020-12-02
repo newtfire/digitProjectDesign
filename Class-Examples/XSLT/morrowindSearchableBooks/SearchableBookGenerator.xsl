@@ -20,7 +20,7 @@
                 <ul>
                     <xsl:for-each select="$morrowindColl//Book">
                         <xsl:sort select="book_title"/>
-                        <li><a href="{tokenize(base-uri(), '/')[last()] ! translate(., 'xml', '')}html"><xsl:apply-templates select="book_title"/></a></li>
+                        <li><a href="{tokenize(base-uri(), '/')[last()] ! substring-before(., '.')}.html"><xsl:apply-templates select="book_title"/></a></li>
                     </xsl:for-each>
                     
                 </ul>
@@ -89,7 +89,7 @@
                             <td>
                                 <ul>
                                     <xsl:for-each select="$morrowindColl//Book[descendant::location/@ref ! normalize-space()  = $currentLoc]">
-                                        <li><a href="{tokenize(current()/base-uri(), '/')[last()] ! translate(., 'xml', '')}html#{replace(descendant::location[@ref ! normalize-space() =$currentLoc][1]/@ref, '[ '']', '')}">first mention</a></li>
+                                        <li><a href="{tokenize(current()/base-uri(), '/')[last()] ! substring-before(., '.')}.html#{replace(descendant::location[@ref ! normalize-space() =$currentLoc][1]/@ref, '[ '']', '')}">first mention</a></li>
                                         
                                     </xsl:for-each> 
                                 </ul>
@@ -126,7 +126,7 @@
                          <td>
                              <ul>
                                  <xsl:for-each select="$morrowindColl//Book[descendant::group[@ref ! normalize-space()  = $currentGroup]]">
-                                     <li><a href="{tokenize(current()/base-uri(), '/')[last()]! translate(., 'xml', '')}html#{replace(descendant::group[@ref ! normalize-space()=$currentGroup][1]/@ref, '[ '']', '')}">first mention</a></li>
+                                     <li><a href="{tokenize(current()/base-uri(), '/')[last()]! substring-before(., '.')}.html#{replace(descendant::group[@ref ! normalize-space()=$currentGroup][1]/@ref, '[ '']', '')}">first mention</a></li>
                                      
                                  </xsl:for-each> 
                              </ul>
@@ -162,7 +162,7 @@
                             <td>
                                 <ul>
                                     <xsl:for-each select="$morrowindColl//Book[descendant::person[@ref ! normalize-space()  = $currentPerson]]">
-                                        <li><a href="{tokenize(current()/base-uri(), '/')[last()]! translate(., 'xml', '')}html#{replace(descendant::person[@ref ! normalize-space()=$currentPerson][1]/@ref, '[ '']', '')}">first mention</a></li>
+                                        <li><a href="{tokenize(current()/base-uri(), '/')[last()]! substring-before(., '.')}.html#{replace(descendant::person[@ref ! normalize-space()=$currentPerson][1]/@ref, '[ '']', '')}">first mention</a></li>
                                         
                                     </xsl:for-each> 
                                 </ul>
