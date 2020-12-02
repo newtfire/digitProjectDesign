@@ -32,22 +32,28 @@
                         <th>Books with Counts</th>
                         <th>Link to First Mention in Each Book</th>
                     </tr>
-                  <xsl:for-each select="distinct-values($morrowindColl//item/@ref ! lower-case(.) ! normalize-space())">
+                  <xsl:for-each select="$morrowindColl//item/@ref ! lower-case(.) ! normalize-space() => distinct-values()">
                       <!--ebb: We have to use xsl:for-each instead of xsl:apply-templates to process this because distinct-values converts XML nodes into strings of text. -->          
                       <xsl:sort/>
                     <xsl:variable name="currentItem" as="xs:string" select="current()"/>
                   <tr>
                       <td><xsl:value-of select="current()"/></td>
-                      <td><ul><xsl:for-each select="$morrowindColl//Book[descendant::item/@ref ! lower-case(.) ! normalize-space() = current()]">
-                          <xsl:sort select="count(descendant::item/@ref ! lower-case(.) !  normalize-space() = $currentItem)" order="descending"/>                 
+                      
+                      <td><ul>
+                          <xsl:for-each select="$morrowindColl//Book[descendant::item/@ref ! lower-case(.) ! normalize-space() = current()]">
+                              
+                          <xsl:sort select="count(current()/descendant::item[@ref ! lower-case(.) !  normalize-space() = $currentItem])" order="descending"/>  
+                           <!--ebb: I repaired this sort() so it is working. Here I needed to sort on a count of item elements, not item/@ref attributes (there would always be just one @ref, so that's why the sort() didn't work before.) -->   
+                              
                           <li><xsl:apply-templates select="book_title"/>, count: <xsl:value-of select="count(descendant::item[@ref ! lower-case(.) ! normalize-space() = $currentItem])"/></li>              
                       </xsl:for-each>
                       </ul>
                       </td>
                       
+                      
                       <td> <ul>
                           <xsl:for-each select="$morrowindColl//Book[descendant::item/@ref ! lower-case(.) ! normalize-space()  = $currentItem]">
-                              <li><a href="{tokenize(current()/base-uri(), '/')[last()] ! translate(., 'xml', '')}html#{replace(descendant::item[@ref ! lower-case(.) ! normalize-space() =$currentItem][1]/@ref, '[ '']', '')}">first mention</a></li>
+                              <li><a href="{tokenize(current()/base-uri(), '/')[last()] ! substring-before(., '.')}.html#{replace(descendant::item[@ref ! lower-case(.) ! normalize-space() =$currentItem][1]/@ref ! lower-case(.) ! normalize-space(), '[ '']', '')}">first mention</a></li>
                               
                           </xsl:for-each> 
                       </ul></td>
@@ -74,7 +80,7 @@
                         <tr> <td><xsl:value-of select="current()"/></td>
                             <td>
                                 <ul><xsl:for-each select="$morrowindColl//Book[descendant::location/@ref ! normalize-space() = current()]">
-                                    <xsl:sort select="count(descendant::location/@ref ! normalize-space() = $currentLoc)" order="descending"/>                 
+                                    <xsl:sort select="count(descendant::location[@ref ! normalize-space() = $currentLoc])" order="descending"/>                 
                                     <li><xsl:apply-templates select="book_title"/>, count: <xsl:value-of select="count(descendant::location[@ref ! normalize-space() = $currentLoc])"/></li>              
                                 </xsl:for-each>
                                     
@@ -111,8 +117,8 @@
                      <tr> <td><xsl:value-of select="current()"/></td>
                          <td>
                              <ul><xsl:for-each select="$morrowindColl//Book[descendant::group/@ref ! normalize-space() = current()]">
-                                 <xsl:sort select="count(descendant::person/@ref ! normalize-space()  = $currentGroup)" order="descending"/>                 
-                                 <li><xsl:apply-templates select="book_title"/>, count: <xsl:value-of select="count(descendant::person[@ref ! normalize-space()  = $currentGroup])"/></li>              
+                                 <xsl:sort select="count(descendant::group[@ref ! normalize-space()  = $currentGroup])" order="descending"/>                 
+                                 <li><xsl:apply-templates select="book_title"/>, count: <xsl:value-of select="count(descendant::group[@ref ! normalize-space()  = $currentGroup])"/></li>              
                              </xsl:for-each>
                                  
                              </ul>
@@ -171,7 +177,7 @@
         <!--ebb: BELOW THIS, in a new xsl:for-each, we output each book as a separate document to save in the same file directory as the morrowindTables.html output file. -->
      
         <xsl:for-each select="$morrowindColl//Book">]
-      <!--ebb: Set a variable to work out the new output filename for each book --><xsl:variable name="fileName" as="xs:string" select="tokenize(current()/base-uri(), '/')[last()] ! translate(., '.xml', '')"/>
+      <!--ebb: Set a variable to work out the new output filename for each book --><xsl:variable name="fileName" as="xs:string" select="tokenize(current()/base-uri(), '/')[last()] ! substring-before(., '.')"/>
  
           <xsl:result-document href="{$fileName}.html" method="xhtml">
               <html>
@@ -202,10 +208,11 @@
     <xsl:template match="p">
         <p><xsl:apply-templates/></p>
     </xsl:template>
+    
     <xsl:template match="item">
         <xsl:choose>
             <xsl:when test="count(preceding::item) = 0">
-                <span class="{name()}" id="{replace(@ref, '[ '']', '')}"><xsl:apply-templates/></span>
+                <span class="{name()}" id="{replace(@ref, '[ '']', '') ! lower-case(.) ! normalize-space()}"><xsl:apply-templates/></span>
             </xsl:when>
             <xsl:otherwise>
                 <span class="{name()}"><xsl:apply-templates/></span>
